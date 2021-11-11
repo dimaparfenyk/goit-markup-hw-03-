@@ -32,6 +32,7 @@ img {
   list-style: none;
   padding: 0px;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -212,7 +213,6 @@ a {
 /* оформление футера */
 .footer {
   background-color: var(--top-section-background-color);
-  padding: 60px auto;
 }
 .footer .contacts {
   display: flex;
