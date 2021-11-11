@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-        <nav class="site-navigation">
+        <nav class="nav-section container">
             <a href="" class="logo">Web<span class="logo-header">Studio</span>
             </a>
             <ul class="nav-list list">
@@ -26,46 +28,47 @@
                     <a href="" class="nav-link">Контакты</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="contacts list">
-            <li>
-                <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="contact-link" href="tel:+380961111111">+38(096)1111111
-                </a>
-            </li>
-        </ul>
     
+            <ul class="contacts list">
+                <li class="contacts-item">
+                    <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contacts-item">
+                    <a class="contact-link" href="tel:+380961111111">+38(096)1111111
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     </header>
     <main class="portfolio-main">
-        <section class="portfolio-section">
-            <div>
+        <section class="portfolio container section">
+    
                 <h1 class="title">Наши работы</h1>
-                <ul class="portfolio-list">
-                    <li class="portfolio-item list">
+                <ul class="portfolio-list list">
+                    <li class="portfolio-item ">
                         <button type="button" class="filter-btn">Все</button>
                     </li>
-                    <li class="portfolio-item list">
+                    <li class="portfolio-item ">
                         <button type="button" class="filter-btn">Веб-сайты</button>
                     </li>
-                    <li class="portfolio-item list">
+                    <li class="portfolio-item ">
                         <button type="button" class="filter-btn">Приложения</button>
                     </li>
-                    <li class="portfolio-item list">
+                    <li class="portfolio-item ">
                         <button type="button" class="filter-btn">Дизайн</button>
                     </li>
-                    <li class="portfolio-item list">
+                    <li class="portfolio-item ">
                         <button type="button" class="filter-btn">Маркетинг</button>
                     </li>
                 </ul>
-                <ul>
+                <ul class="projects-list">
                     <li class="company-projects list">
                         <a href=""> <img src="./images/технокряк.jpg" alt="Главная страница сайта" width="370">
-                            <div class="projects-description">
+                            
                                 <h2 class="project-name">Технокряк</h2>
                                 <p class="project-type">Веб-сайт</p>
-                            </div>
+                            
                         </a>
                     </li>
                     <li class="company-projects list">
@@ -137,16 +140,19 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section container">
         <a href="" class="logo">Web<span class="logo-footer">Studio</span>
         </a>
-        <address class="company-adress"> г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="contacts list">
-            <li>
+            <li class="footer-items">
+                <address class="company-adress"> г. Киев, пр-т Леси Украинки, 26
+                </address>
+            </li>
+            <li class="footer-items">
                 <a class="footer-contact-link" href="mailto:info@devstudio.com">info@devstudio.com
                 </a>
             </li>
-            <li>
+            <li class="footer-items">
                 <a class="footer-contact-link" href="tel:+380961111111">+38(096) 111 11 11
                 </a>
             </li>

@@ -5,6 +5,7 @@
   --main-text-color: #ffffff;
   --header-background-color: #ffffff;
   --top-section-background-color: #2f303a;
+  --card-border-color: #eeeeee;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -18,13 +19,17 @@ body {
 p,
 h1,
 h2,
-h3 {
+h3,
+ul {
   margin: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style: none;
-  margin: 0px;
   padding: 0px;
 }
 .container {
@@ -32,7 +37,6 @@ h3 {
   margin: 0 auto;
 }
 /* оформление логотипа */
-
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -56,6 +60,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 25px 15px;
+  border-bottom: 1px solid #ececec;
 }
 .nav-item + .nav-item {
   margin-left: 50px;
@@ -76,7 +82,7 @@ a {
 .nav-link:focus {
   color: var(--accent-color);
 }
-.contacts {
+.nav-section .contacts {
   display: flex;
   margin-left: auto;
 }
@@ -183,9 +189,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
-.team {
-  padding-top: 94px;
-}
+
 .team-list {
   display: flex;
   margin-top: 50px;
@@ -214,6 +218,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  width: 230px;
 }
 .footer-items:not(:first-child) {
   margin-top: 9px;
@@ -233,6 +238,16 @@ a {
   color: var(--footer-contacts-color);
 }
 /* оформление портфолио */
+.portfolio .title {
+  display: none;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-btn {
   display: inline-block;
   padding: 6px 22px;
@@ -256,6 +271,13 @@ a {
   color: var(--main-text-color);
   cursor: pointer;
 }
+/* оформление карточек */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 34px;
+}
 .project-name {
   font-weight: 700;
   font-size: 18px;
@@ -269,4 +291,14 @@ a {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.projects-description {
+  border: 1px solid var(--card-border-color);
+}
+.company-projects:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+.projects-description {
+  border: 1px solid var(--card-border-color);
+  border-top: none;
 }
