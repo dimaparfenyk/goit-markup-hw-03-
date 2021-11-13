@@ -184,10 +184,10 @@ a {
 /* оформление production-section */
 .production-section {
   padding-top: 0px;
+  padding-bottom: 94px;
 }
 .production-item {
   margin-top: 50px;
-  margin-bottom: 94px;
 }
 .production-item + .production-item {
   margin-left: 30px;
@@ -198,6 +198,8 @@ a {
 /* оформление team-section */
 .team-section {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .title {
   font-weight: 700;
@@ -207,15 +209,11 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
-.team-title {
-  margin-top: 94px;
-}
 .team-list {
   display: flex;
   margin-top: 50px;
 }
 .team-item {
-  margin-bottom: 94px;
   background-color: #fff;
   border-radius: 3px;
 }
@@ -240,8 +238,6 @@ a {
 /* оформление футера */
 .footer-section {
   background-color: var(--top-section-background-color);
-}
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -271,6 +267,10 @@ a {
 /* оформление портфолио */
 .portfolio-section .title {
   display: none;
+}
+.portfolio-section {
+  padding-top: 77px;
+  padding-bottom: 94px;
 }
 .portfolio-container {
   border-top: 16px solid #c4c4c4;
@@ -333,5 +333,5 @@ a {
 .projects-description {
   border: 1px solid var(--card-border-color);
   border-top: none;
-  padding: 20px 0px 20px 24px;
+  /* padding: 20px 0px 20px 24px; */
 }
