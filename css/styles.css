@@ -140,7 +140,7 @@ a {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  display: inline-block;
+  display: block;
   background-color: #188cef;
   cursor: pointer;
 }
